@@ -11,14 +11,14 @@
         <link rel="canonical" href="https://15r10nk.github.io/inline-snapshot/configuration/">
       
       
-        <link rel="prev" href="../pytest/">
+        <link rel="prev" href="../categories/">
       
       
         <link rel="next" href="../contributing/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.21">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.24">
     
     
       
@@ -26,7 +26,7 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.66ac8b77.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.6543a935.min.css">
       
         
         <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
@@ -47,6 +47,10 @@
         <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
       
     
+    
+      <link rel="stylesheet" href="../assets/_markdown_exec_pyodide.css">
+    
+      <link rel="stylesheet" href="../assets/_markdown_exec_ansi.css">
     
       <link rel="stylesheet" href="../assets/_mkdocstrings.css">
     
@@ -525,6 +529,26 @@
       
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="../categories/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Categories
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
     
   
   
@@ -628,11 +652,14 @@
 <p>Default configuration:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">[tool.inline-snapshot]</span>
 <a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="n">hash-length</span><span class="o">=</span><span class="mi">15</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="n">default-flags</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;short-report&quot;</span><span class="p">]</span>
 </code></pre></div>
 <ul>
-<li><em>hash-length</em> specifies the length of the hash used by <code>external()</code> in the code representation.
+<li><em>hash-length:</em> specifies the length of the hash used by <code>external()</code> in the code representation.
     This does not affect the hash length used to store the data.
     The hash should be long enough to avoid hash collisions.</li>
+<li><em>default-flags:</em> defines which flags should be used if there are no flags specified with <code>--inline-snapshot=...</code>.
+    You can also use the environment variable <code>INLINE_SNAPSHOT_DEFAULT_FLAGS=...</code> to specify the flags and to override those in the configuration file.</li>
 </ul>
 
 
@@ -714,7 +741,9 @@
     <script id="__config" type="application/json">{"base": "..", "features": ["toc.follow", "content.code.annotate"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.a7c05c9e.min.js"></script>
+      <script src="../assets/javascripts/bundle.081f42fc.min.js"></script>
+      
+        <script src="../assets/_markdown_exec_pyodide.js"></script>
       
     
   </body>
